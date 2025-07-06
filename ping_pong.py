@@ -45,6 +45,19 @@ FPS = 60
 game = True
 finish = False
 
+# Создание мяча и ракетки
+racket1 = Player('racket.png', 30, 200, 4, 50, 150)
+racket2 = Player('racket.png', 30, 520, 4, 50, 150)
+ball = GameSprite('tenis_ball.png', 200, 200, 4, 50, 50)
+
+font.init()
+font = font.Font(None, 35)
+loose1 = font.render('Player 1 loose', True, (180, 0, 0))
+loose2 = font.render('Player 2 loose', True, (180, 0, 0))
+
+speed_x = 3
+speed_y = 3
+
 while game:
     for e in event.get():
         if e.type == QUIT:
