@@ -46,9 +46,9 @@ game = True
 finish = False
 
 # Создание мяча и ракетки
-racket1 = Player('racket.png', 30, 200, 4, 50, 150)
-racket2 = Player('racket.png', 30, 520, 4, 50, 150)
-ball = GameSprite('tenis_ball.png', 200, 200, 4, 50, 50)
+racket1 = Player('racket.png', 30, 200, 20, 80, 5)
+racket2 = Player('racket.png', 540, 200, 20, 80, 5)
+ball = GameSprite('tenis_ball.png', 200, 200, 40, 40, 50)
 
 font.init()
 font = font.Font(None, 35)
